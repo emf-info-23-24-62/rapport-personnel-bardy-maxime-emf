@@ -1099,11 +1099,28 @@ Appliquent une **fonction d’accumulation** pour produire **une valeur unique**
 
 ## `reverse()` - inverser l'ordre du tableau
 
-Description à faire par vos soins...
+Inverse **en place** l’ordre des éléments et retourne **le même tableau** (mutation).
 
 ```javascript
-A FAIRE PAR VOS SOINS...
-SIMPLE, DROIT AU BUT, UTILE, STYLE PENSE-BÊTE
+const a = [1, 2, 3];
+a.reverse();        // [3, 2, 1]
+a;                  // [3, 2, 1]  (modifié)
+```
+
+```javascript
+// Sans muter l’original
+const b = [1, 2, 3];
+const r = b.slice().reverse(); // [3,2,1]
+```
+
+```javascript
+// Alternative moderne (si dispo) : ne mute pas
+[1, 2, 3].toReversed(); // [3,2,1]
+```
+
+```javascript
+// Inverser une chaîne
+"salut".split('').reverse().join(''); // "tulas"
 ```
 
 <svg height="12" width="100%" style="padding-top:2em;padding-bottom:1em">
