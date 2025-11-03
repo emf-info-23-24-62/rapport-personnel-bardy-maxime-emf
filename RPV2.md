@@ -449,6 +449,8 @@ Argument optionnel `limit` = nombre max d’éléments.
 ```javascript
 "1,2,3".split(",");            // ["1","2","3"]
 "a-b-c-d".split("-", 2);       // ["a","b"]  (limit)
+"1,2,3".split(",")[1];         // "2"     (2e élément)
+"14.03.2008".split(".")[2], 10;    // "2008"  (3e élément) + (10 pour forcé la base décimal)
 
 const txt = "ligne1\nligne2\nligne3";
 txt.split("\n");               // ["ligne1","ligne2","ligne3"]
