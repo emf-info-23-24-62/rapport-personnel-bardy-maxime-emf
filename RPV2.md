@@ -284,7 +284,6 @@ const total = 53, parPage = 10;
 const pages = Math.ceil(total / parPage); // 6
 ```
 
-
 ## `Math.floor()` - arrondir à la précédente valeur entière la plus proche
 
 Renvoie le **plus grand entier ≤ x** (arrondi vers le bas, vers **-∞**).
@@ -310,6 +309,8 @@ Math.round(-1.1); // -1
 Math.round(-1.5); // -1
 Math.round(-1.6); // -2
 ```
+
+> Astuce : pour arrondir au demi "**Math.round(x * 2) / 2**".
 
 ## `Math.trunc()` - supprime la virgule et retourne la partie entière d'un nombre
 
